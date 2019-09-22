@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1564275072 source:e:\c\sudoko\show_table.c
+	<unistd.h>
+
+1564274614 source:e:\c\sudoko\main.c
+	<stdio.h>
+
