@@ -4,14 +4,16 @@
 #include <unistd.h>
 
 void show_table(char **tab);
-void set_num(char **tab);
+int set_num(char **tab);
+int find_empty(char **tab, int *i,  int *j);
 
 int main(int argc,char **argv)
 {
-    show_table(argv);
-    set_num(argv);
-    write(1,"\n",1);
-    show_table(argv);
+    int i ,j;
+   if (set_num(argv) == 1)
+        show_table(argv);
+    else
+        printf("error");
     return 0;
 }
 
